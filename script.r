@@ -2,9 +2,8 @@ source('./r_files/flatten_HTML.r')
 
 ############### Library Declarations ###############
 libraryRequireInstall("echarts4r");
-libraryRequireInstall("remotes");
 libraryRequireInstall("geojsonsf");
-libraryRequireInstall("tidyverse");
+libraryRequireInstall("geojsonio");
 
 ####################################################
 
@@ -12,6 +11,12 @@ libraryRequireInstall("tidyverse");
 
 
 #vic_json <- readRDS("./assets/shapes.rds")
+#vic_json <- geojson_read("./assets/shapes.geojson")
+
+download.file("https://github.com/carlosyanez/pbiviclga/raw/main/assets/shapes.rds","shapes.rds")
+vic_json <- readRDS("shapes.rds")
+
+
 
 vic_map <-
   dataset |>

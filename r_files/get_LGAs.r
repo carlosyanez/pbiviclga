@@ -3,22 +3,21 @@
 library(aussiemaps)
 library(geojsonsf)
 library(tidyverse)
-
+library(geojsonio)
+library(rmapshaper)
+library(sf)
 victoria <- locations.table %>% filter(State=="VIC")
 
 vic <- load_map(victoria,aggregation = "LGA")
 
-vic_json <- sf_geojson(vic)
+vic2 <- rmapshaper::ms_simplify(input = as(vic, 'Spatial')) %>%
+        st_as_sf()
+vic_json <- sf_geojson(vic2)
 
 saveRDS(vic_json,"assets/shapes.rds")
+#i geojsonio::geojson_write(vic_json, file = "assets/shapes.geojson")
 
 test <- victoria %>% distinct(LGA) %>% mutate(value=row_number())
-write_csv(test,"test.csv")
-library(echarts4r)
 
-vic_map <-
-test |>
-e_charts(LGA) |>
-  e_map_register("Victoria", vic_json) |>
-  e_map(value,map = "Victoria", nameProperty = "LGA") |>
-  e_visual_map(value)
+#write_csv(test,"test.csv")
+
