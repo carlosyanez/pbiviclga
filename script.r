@@ -2,9 +2,10 @@ source('./r_files/flatten_HTML.r')
 
 ############### Library Declarations ###############
 libraryRequireInstall("echarts4r");
+libraryRequireInstall("jsonlite");
+libraryRequireInstall("tibble");
+libraryRequireInstall("dplyr");
 libraryRequireInstall("geojsonsf");
-libraryRequireInstall("geojsonio");
-
 ####################################################
 
 ################### Actual code ####################
@@ -16,10 +17,11 @@ libraryRequireInstall("geojsonio");
 download.file("https://github.com/carlosyanez/pbiviclga/raw/main/assets/shapes.rds","shapes.rds")
 vic_json <- readRDS("shapes.rds")
 
+LGAs <- geojson_sf(vic_json) |> select(LGA)
 
+dataset <- left_join(LGAs,dataset,by="LGA")
 
-vic_map <-
-  dataset |>
+vic_map <- dataset |>
   e_charts(LGA) |>
   e_map_register("Victoria", vic_json) |>
   e_map(value,map = "Victoria", nameProperty = "LGA") |>
