@@ -1,0 +1,9 @@
+{
+  "cranPackages": [
+    {
+      "name": "echarts4r",
+      "displayName": "echarts4r",
+      "url": "https://cran.r-project.org/web/packages/echarts4r/index.html"
+    }
+  ]
+}

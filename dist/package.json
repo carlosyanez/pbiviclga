@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "author": {"name":"Carlos Yanez Santibanez","email":"carlos.yanez.s@gmail.com"},
+    "resources": [
+        {
+            "resourceId": "rId0",
+            "sourceType": 5,
+            "file": "resources/melbmapC488769D20414D169E26B0832E038E99.pbiviz.json"
+        }
+    ],
+    "visual": {"name":"melbmap","displayName":"Victorian LGAs","guid":"melbmapC488769D20414D169E26B0832E038E99","visualClassName":"Visual","version":"1.0.0","description":"Map with Victorian LGAs","supportUrl":"https://www.carlosyanez.cl","gitHubUrl":""},
+    "metadata": {
+        "pbivizjson": {
+            "resourceId": "rId0"
+        }
+    }  
+}
