@@ -5,4 +5,4 @@
 Simple custom Power Bi visual, displaying map with Local Government Areas in Victoria, Australia.
 
 Visual built on R, using the following packages:
-* [https://echarts4r.john-coene.com/](echarts4r)
+* [echarts4r](https://echarts4r.john-coene.com/) for charting
