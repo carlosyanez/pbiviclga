@@ -14,7 +14,8 @@ Visual built on R, using the following packages:
 
 # How to use
 
+You can download the pbiviz file [here](https://github.com/carlosyanez/pbiviclga/blob/main/dist/viclgaC488769D20414D169E26B0832E038E99.1.0.1.pbiviz).
 
 # Disclaimer, this can be done in Power BI natively!
 
-Please note that this map can be loaded into Power BI using the **Shape map** pre-built visual. You can find the topojson file (here)[https://github.com/carlosyanez/pbiviclga/blob/main/assets/vic_lga_topo.json].
+Please note that this map can be loaded into Power BI using the **Shape map** pre-built visual ([here](https://learn.microsoft.com/en-us/power-bi/visuals/desktop-shape-map), chec customs map seciton). You can find the topojson file [here](https://github.com/carlosyanez/pbiviclga/blob/main/assets/vic_lga_topo.json).
