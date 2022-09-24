@@ -11,3 +11,10 @@ Visual built on R, using the following packages:
 
 
 ![](example/example.png)
+
+# How to use
+
+
+# Disclaimer, this can be done in Power BI natively!
+
+Please note that this map can be loaded into Power BI using the **Shape map** pre-built visual. You can find the topojson file (here)[https://github.com/carlosyanez/pbiviclga/blob/main/assets/vic_lga_topo.json].
