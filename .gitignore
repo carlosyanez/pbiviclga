@@ -2,3 +2,16 @@
 .tmp/*
 webpack.statistics.prod.html
 webpack.statistics.prod.html
+.Rhistory
+.tmp/build/.tmp/precompile/visualPlugin.d.ts
+.tmp/build/src/settings.d.ts
+.tmp/drop/pbiviz.json
+.tmp/drop/status
+.tmp/drop/visual.js
+.tmp/precompile/visualPlugin.ts
+.tmp/drop/pbiviz.json
+.tmp/drop/status
+.tmp/drop/visual.js
+.tmp/precompile/visualPlugin.ts
+.tmp/build/.tmp/precompile/visualPlugin.d.ts
+.tmp/build/src/settings.d.ts

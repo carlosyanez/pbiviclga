@@ -1,9 +1,16 @@
 {
   "dataRoles": [
     {
-      "displayName": "Values",
+      "displayName": "LGAs",
+      "description": "LGA names, withouth City/Shire of (e.g. Greater Dandenong, Buloke, Bayside)",
       "kind": "GroupingOrMeasure",
-      "name": "dataset"
+      "name": "LGA"
+    },
+    {
+      "displayName": "Values",
+      "description": "Value associated to each LGA",
+      "kind": "GroupingOrMeasure",
+      "name": "Value"
     }
   ],
   "dataViewMappings": [
@@ -15,7 +22,12 @@
               "select": [
                 {
                   "for": {
-                    "in": "dataset"
+                    "in": "LGA"
+                  }
+                },
+                {
+                  "for": {
+                    "in": "Value"
                   }
                 }
               ],
@@ -41,22 +53,51 @@
     }
   ],
   "objects": {
-    "rcv_script": {
-      "properties": {
-        "provider": {
-          "type": {
-            "text": true
-          }
-        },
-        "source": {
-          "type": {
-            "scripting": {
-              "source": true
-            }
-          }
-        }
+    "settings": {
+    "displayName": "Settings",
+    "description": "Settings",
+    "properties": {
+      "ShowLegend":{
+        "displayName": "Show Legend",
+        "description": "Show Legend",
+        "type": {
+          "bool": true
       }
-    }
-  },
+      },
+      "bottomColour": {
+        "displayName": "Lower Colour",
+        "description": "Lower Colour",
+        "type": {
+          "fill": {
+              "solid": {
+                  "color": true
+              }
+          }
+      }
+      },
+      "middleColour": {
+        "displayName": "Mid-scale Colour",
+        "description": "Mid-scale Colour",
+        "type": {
+          "fill": {
+              "solid": {
+                  "color": true
+              }
+          }
+      }
+      },
+      "topColour": {
+        "displayName": "Higher Colour",
+        "description": "Higher Colour",
+        "type": {
+          "fill": {
+              "solid": {
+                  "color": true
+              }
+          }
+      }
+      }
+  
+  }}},
   "suppressDefaultTitle": true
 }

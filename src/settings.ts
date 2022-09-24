@@ -31,10 +31,20 @@ import DataViewObjectsParser = dataViewObjectsParser.DataViewObjectsParser;
 
 export class VisualSettings extends DataViewObjectsParser {
       public rcv_script: rcv_scriptSettings = new rcv_scriptSettings();
+      public settings: PlotSettings = new PlotSettings();
+
       }
 
     export class rcv_scriptSettings {
      // undefined
       public provider     // undefined
       public source     }
+    
+    export class PlotSettings{
+      public bottomColour: string = "#FFFFCC";
+      public middleColour: string = null;
+      public topColour: string = "#C90000";
+      public ShowLegend: boolean = true;
+
+    }
 

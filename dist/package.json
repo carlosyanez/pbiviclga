@@ -1,14 +1,14 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {"name":"Carlos Yanez Santibanez","email":"carlos.yanez.s@gmail.com"},
     "resources": [
         {
             "resourceId": "rId0",
             "sourceType": 5,
-            "file": "resources/melbmapC488769D20414D169E26B0832E038E99.pbiviz.json"
+            "file": "resources/viclgaC488769D20414D169E26B0832E038E99.pbiviz.json"
         }
     ],
-    "visual": {"name":"melbmap","displayName":"Victorian LGAs","guid":"melbmapC488769D20414D169E26B0832E038E99","visualClassName":"Visual","version":"1.0.0","description":"Map with Victorian LGAs","supportUrl":"https://www.carlosyanez.cl","gitHubUrl":""},
+    "visual": {"name":"viclga","displayName":"Victorian LGAs","guid":"viclgaC488769D20414D169E26B0832E038E99","visualClassName":"Visual","version":"1.0.1","description":"Map with Victorian LGAs","supportUrl":"https://www.carlosyanez.id.au","gitHubUrl":"https://github.com/carlosyanez/pbiviclga"},
     "metadata": {
         "pbivizjson": {
             "resourceId": "rId0"

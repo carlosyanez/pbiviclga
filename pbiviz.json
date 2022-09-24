@@ -1,1 +1,17 @@
-{"visual":{"name":"melbmap","displayName":"Victorian LGAs","guid":"melbmapC488769D20414D169E26B0832E038E99","visualClassName":"Visual","version":"1.0.0","description":"Map with Victorian LGAs","supportUrl":"https://www.carlosyanez.cl","gitHubUrl":""},"apiVersion":"3.8.0","author":{"name":"Carlos Yanez Santibanez","email":"carlos.yanez.s@gmail.com"},"assets":{"icon":"assets/icon.png","shapes":"assets/shapes.geojson"},"externalJS":null,"style":"style/visual.less","capabilities":"capabilities.json","dependencies":"dependencies.json","stringResources":[]}
+{"visual":{"name":"viclga",
+            "displayName":"Victorian LGAs",
+            "guid":"viclgaC488769D20414D169E26B0832E038E99",
+            "visualClassName":"Visual",
+            "version":"1.0.1",
+            "description":"Map with Victorian LGAs",
+            "supportUrl":"https://www.carlosyanez.id.au",
+            "gitHubUrl":"https://github.com/carlosyanez/pbiviclga"},
+            "apiVersion":"3.8.0",
+            "author":{"name":"Carlos Yanez Santibanez",
+                     "email":"carlos.yanez.s@gmail.com"},
+            "assets":{"icon":"assets/icon.png",
+                      "json":"assets/vic_lga.json"},
+            "externalJS":null,"style":"style/visual.less",
+            "capabilities":"capabilities.json",
+            "dependencies":"dependencies.json",
+            "stringResources":[]}
